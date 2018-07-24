@@ -1,0 +1,251 @@
+{% extends "./layout/parent.html" %}
+{% block main_body %}
+<title>{{ entry.title }}</title>   
+    
+    {# add your body here using {{ entry.field_name }} #}
+
+<!-- /main-wrapper start-->
+<div class="main-wrapper">
+    <div class="overlay"></div>
+
+<section>
+	<!-- /top-content-region -->
+    
+	<div id="top-content-region" class="top-content region-0 padding-top-15 padding-bottom-15 block-15 bg-color-grayLight1">
+		<div class="container">
+			<div class="row">
+				<!-- /top-content-left-region start-->
+				<div id="top-content-left-region" class="top-content-left col-xs-12 col-md-6 text-center-sm">
+					<div class="region">
+						<!-- /page-title-block start-->
+                        
+						<div id="page-title-block" class="page-title block">
+							<h2 style="color: #666">{{entry.page}}</h2>
+						</div>
+						<!-- /page-title-block end-->
+					</div>
+				</div>
+				<!-- /top-content-left-region end-->
+			</div>
+		</div>
+	</div>
+	<!-- /top-content-region -->
+
+	<div id="content-region" class="content region">
+
+		<div id="about-content-block" class="about-content block">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-xs-12 col-md-6 ul-chk-style">
+						<h5 style="color: ">{{entry.company.background.title}}</h5>
+						{{entry.company.background.description}}
+					</div> <!-- /col-xs-12 -->
+
+					<div class="col-xs-12 col-md-6 margin-top-sm-30">
+						<div class="flex-arrow-slider">
+							<ul class="slides">
+								{# {% for x in entry.company.images %} #}
+									<li class="flex-active-slide"><img src="{{entry.company.images[0].image.url}}" alt="cookies" title="cookies" class="img-responsive img-full-width" draggable="false"></li>
+								{# {% endfor %} #}
+								<li class="flex-active-slide"><img src="{{entry.company.images[1].image.url}}" alt="cookies" title="cookies" class="img-responsive img-full-width" draggable="false"></li> 
+								
+								<li class="flex-active-slide"><img src="{{entry.company.images[2].image.url}}" alt="cookies" title="cookies" class="img-responsive img-full-width" draggable="false"></li> 
+								
+							</ul>
+							<ul class="flex-direction-nav">
+								<li>
+									<a class="flex-prev" href="#">Previous</a>
+								</li>
+								<li>
+									<a class="flex-next" href="#">Next</a>
+								</li>
+							</ul><!-- /flex-arrow-slider -->
+					</div>
+					</div> <!-- /col-xs-12 -->
+
+				</div> <!-- /row -->
+			</div> <!-- /container -->
+		</div> <!-- /about-content-block -->
+
+
+		<div id="section-block" class="section block">
+			<div class="container">
+				<div class="row">
+					
+
+					<div class="col-xs-12 col-md-4 panels-item">
+						<h5 class="section-title" style="color: ">Fast Support</h5>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+								Curabitur nunc justo, ultrices quis consequat nec, sodales non tortor.
+								Pellentesque porttitor.
+							</p>
+					</div> <!-- /panels-item -->
+
+					
+
+					<div class="col-xs-12 col-md-4 panels-item">
+						<h5 class="section-title" style="color: ">Secure Bitcoins</h5>
+							<p>
+								Integer sed feugiat nisi. Nulla pharetra in lacus in egestas.
+							    Mauris consectetur, elit congue placerat volutpat, ipsum velit blandit justo, sed imperdiet.
+							</p>
+					</div> <!-- /panels-item -->
+
+					
+
+					<div class="col-xs-12 col-md-4 panels-item">
+						<h5 class="section-title" style="color: ">Happy Life</h5>
+							<p>
+								Sed sollicitudin libero nisl, in vehicula lorem blandit sit amet. 
+								Duis vel sapien sed lacus posuere varius ut vel dolor. 
+								Donec ut odio sagittis mi fringilla.
+							</p>
+					</div> <!-- /panels-item -->
+
+					
+				</div> <!-- /row -->
+			</div> <!-- /container -->
+		</div> <!-- /section-block -->
+
+	</div> <!-- /content-region -->
+	
+	<div id="content-1-region" class="content-1 bg-color-grayLight1 region" style="background-color:;">
+		<div id="company-stats-2-block" class="company-stats-2 block text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-10 col-md-offset-1 text-center">
+						<h3 class="text-color-theme" style="color: #666">Corporate is a sleek theme that will fit your purposes</h3>
+							<p style="color:;">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+								Fusce commodo dui dui, quis scelerisque massa placerat eu. 
+								Donec nunc nibh, malesuada non enim non, fermentum lobortis magna. 
+								Quisque vitae mollis quam, a feugiat odio. Proin id lorem mollis, mollis.
+							</p>
+					</div> <!-- /col-xs-12 -->
+				</div> <!-- /row -->
+
+			</div> <!-- /container -->
+		</div> <!-- /company-stats-2-block -->
+
+	</div> <!-- /content-1-region -->
+
+	<div id="content-2-region" class="content-2 region team-section">
+		<div id="team-block" class="team block">
+			<div class="container">
+				<h2 class="block-title">Our Team</h2>
+				<div class="row">
+					
+					<div class="col-xs-12 col-md-4 team-item">
+						<div class="team-item-image">
+							<img src="/assets/blte5e9fa0c3492f523/Blog_pic1.png" alt="member 1" title="member 1" class="img-responsive">
+							<div class="team-item-overlay" style="background-color: #e9886c">
+								<p>
+									<a href="#">facebook</a><br>
+									<a href="#">twitter</a><br>
+									<a href="#">pinterest</a>
+								</p>
+							</div>
+						</div> <!-- /team-item-image -->
+                        
+						<div class="team-item-name">
+							<h6 style="color: e9886c">Someone Unknown</h6>
+							<p class="text-color-theme" style="color: #777" >CEO</p>
+						</div> <!-- /team-item-name -->
+						<p class="team-item-description">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+								Donec a augue bibendum, convallis tortor sed, porta risus. 
+								Phasellus condimentum suscipit nibh.
+							</p> 
+						</p>
+					</div> <!-- /team-item -->
+					
+					<div class="col-xs-12 col-md-4 team-item">
+						<div class="team-item-image">
+							<img src="/assets/bltabcdd07f40fc4ea6/Blog_pic.png" alt="member 1" title="member 1" class="img-responsive">
+							<div class="team-item-overlay" style="background-color: #e9886c">
+								<p>
+									<a href="#">facebook</a><br>
+									<a href="#">twitter</a><br>
+									<a href="#">pinterest</a>
+								</p>
+							</div>
+						</div> <!-- /team-item-image -->
+                        
+						<div class="team-item-name">
+							<h6 style="color: e9886c">Someone Unknown</h6>
+							<p class="text-color-theme" style="color: #777" >CFO</p>
+						</div> <!-- /team-item-name -->
+						<p class="team-item-description">
+							<p>
+								Duis fringilla scelerisque erat et venenatis. 
+								Duis eu ligula non mauris blandit ultricies ac sed dui. 
+								Nullam odio nunc, porta vel sollicitudin a, convallis non.
+							</p> 
+						</p>
+					</div> <!-- /team-item -->
+					
+					<div class="col-xs-12 col-md-4 team-item">
+						<div class="team-item-image">
+							<img src="/assets/blt145c3a1ac19b6220/background.png" alt="member 1" title="member 1" class="img-responsive">
+							<div class="team-item-overlay" style="background-color: #e9886c">
+								<p>
+									<a href="#">facebook</a><br>
+									<a href="#">twitter</a><br>
+									<a href="#">pinterest</a>
+								</p>
+							</div>
+						</div> <!-- /team-item-image -->
+                        
+						<div class="team-item-name">
+							<h6 style="color: e9886c">Someone Unknown</h6>
+							<p class="text-color-theme" style="color: #777" >Designer</p>
+						</div> <!-- /team-item-name -->
+						<p class="team-item-description">
+							<p>
+								Sed consequat tristique purus et tincidunt. 
+								Donec volutpat risus lorem, auctor condimentum tellus sagittis non. 
+								Etiam viverra mi arcu. Fusce blandit.
+							</p> 
+						</p>
+					</div> <!-- /team-item -->
+					
+
+				</div> <!-- /row -->
+			</div> <!-- /container -->
+		</div> <!-- /team-block -->
+
+	</div> <!-- /content-2-region -->
+
+	
+	<div id="content-3-region" class="content-3 region bg-color-grayLight1" style="background-color:;">
+		<div id="partners-block" class="partners block">
+			<div class="container">
+				<div class="row text-center">
+					
+					<div class="col-xs-12 col-sm-6 col-md-3 partner">
+						<img src="" alt="partner 1" class="img-responsive">
+					</div> <!-- /partner -->
+					
+					<div class="col-xs-12 col-sm-6 col-md-3 partner">
+						<img src="" alt="partner 1" class="img-responsive">
+					</div> <!-- /partner -->
+					
+					<div class="col-xs-12 col-sm-6 col-md-3 partner">
+						<img src="" alt="partner 1" class="img-responsive">
+					</div> <!-- /partner -->
+					
+					<div class="col-xs-12 col-sm-6 col-md-3 partner">
+						<img src="" alt="partner 1" class="img-responsive">
+					</div> <!-- /partner -->
+					
+				</div> <!-- /row -->
+			</div> <!-- /container -->
+		</div> <!-- /partners-block -->
+	</div> <!-- /content-3-region -->
+
+   </section>
+</div>
+{% endblock %}   
