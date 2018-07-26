@@ -4,7 +4,7 @@ var Stack = require('../models/contentstack')
 
 
 router.get('/modularblockdemo', function (req, res) {
-    var contentTypeUID = "modularblockdemo"
+    var contentTypeUID = "modularblock"
 
     Stack.ContentType(contentTypeUID).Query()
         .toJSON()
